@@ -21,36 +21,9 @@
 
 	<link rel="stylesheet" href="css/flaticon.css">
 	<link rel="stylesheet" href="css/style.css">
-	 <script src="https://js.instamojo.com/v1/checkout.js"></script> 
+	 <script src="https://js.test.instamojo.com/v1/checkout.js"></script> 
 	<script>
-		 function onOpenHandler () {
-        alert('Payments Modal is Opened');
-      }
-
-      function onCloseHandler () {
-        alert('Payments Modal is Closed');
-      }
-
-      function onPaymentSuccessHandler (response) {
-        alert('Payment Success');
-        console.log('Payment Success Response', response);
-      }
-
-      function onPaymentFailureHandler (response) {
-        alert('Payment Failure');
-        console.log('Payment Failure Response', response);
-      }
-      /* End client-defined Callback Handler Functions */
-
-      /* Configuring Handlers */
-      Instamojo.configure({
-        handlers: {
-          onOpen: onOpenHandler,
-          onClose: onCloseHandler,
-          onSuccess: onPaymentSuccessHandler,
-          onFailure: onPaymentFailureHandler
-        }
-      });
+		
         function onButtonClick() {
                                      Instamojo.open("https://test.instamojo.com/@nitheshreddy_k939");
                                   }
