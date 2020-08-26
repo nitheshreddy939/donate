@@ -22,7 +22,12 @@
 	<link rel="stylesheet" href="css/flaticon.css">
 	<link rel="stylesheet" href="css/style.css">
 	
-          <script src="https://d2xwmjc4uy2hr5.cloudfront.net/im-embed/im-embed.min.js"></script>
+           <script src="https://js.instamojo.com/v1/checkout.js"></script>
+    <script>
+      function onButtonClick() {
+        Instamojo.open('http://www.instamojo.com/@ayushya');
+      }
+    </script>   
 	
 </head>
 <body>
@@ -63,7 +68,10 @@
 					
 					<li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
 					<li class="nav-item cta"><a href="https://test.instamojo.com/@nitheshreddy_k939" class="nav-link">Donate</a> </li>
-					<li class="nav-item"> <a href="https://test.instamojo.com/@nitheshreddy_k939" rel="im-checkout" data-behaviour="remote" data-style="light" data-text="Check"></a><li>
+					<li class="nav-item"> <button onclick="onButtonClick()">
+      Open Instapay
+						</button><li>
+				        
 				</ul>
 			</div>
 		</div>
